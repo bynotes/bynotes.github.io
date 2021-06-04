@@ -1,0 +1,500 @@
+/* CSS DocumentΪ��Ľ��|�ʼ�bynote.cn/����Butterfly���� ���Զ����ۺ�CSS������ */
+/* 1.����ͼ����ɫ ===========================================*/
+/* �����˵� */
+i.fas.fa-home {
+    color: mediumturquoise;
+}
+i.fa.fa-list {
+    color: #00FF7F;
+}
+i.fa.fa-archive {
+    color: blue;
+}
+i.fa.fa-folder-open {
+    color: orange;
+}
+i.fa.fa-tags {
+    color: rebeccapurple;
+}
+i.fas.fa-photo-video {
+    color: #FFFF00;
+}
+i.fa-fw.fa.fa-image {
+    color: red;
+}
+i.fa-fw.fa.fa-music {
+    color: Purple;
+}
+i.fas.fa-tasks {
+    color: mediumturquoise;
+}
+i.fas.fa-user-ninja {
+    color: LightGreen;
+}
+i.fa-fw.fa.fa-paper-plane {
+    color: teal;
+}
+i.fas.fa-camera-retro {
+    color: DarkOrchid;
+}
+i.fas.fa-handshake {
+    color: #32CD32;
+}
+i.fa-fw.fa.fa-coffee {
+    color: Sienna;
+}
+i.fa-fw.fa.fa-comments {
+    color: DarkTurquoise;
+}
+i.fa.fa-link {
+    color: teal;
+}
+i.fa.fa-heart {
+    color: #4876FF;
+}
+i.fas.fa-fan {
+    color: #912CEE;
+}
+i.fab.fa-qq {
+    color: #FF4500;
+}
+i.fab.fa-weixin {
+    color: #00CD66;
+}
+i.fab.fa-github {
+    color: #7B68EE;
+}
+i.fas.fa-envelope {
+    color: #FF6347;
+}
+i.fab.fa-weibo {
+    color: #A020F0;
+}
+i.fas.fa-paw.fa-spin {
+    color: #1E90FF;
+}
+i.fas.fa-archive {
+    color: #7A67EE;
+}
+i.fas.fa-tag.article-meta__icon {
+    color: blueviolet;
+}
+i.fas.fa-inbox.article-meta__icon {
+    color: springgreen;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta__link {
+    color: #FF0000;
+}
+i.fas.fa-film {
+    color: dodgerblue;
+}
+i.fas.fa-chart-line {
+    color: crimson;
+}
+i.fas.fa-bolt {
+    color: crimson;
+}
+i.fas.fa-baseball-ball {
+    color: #FF6347;
+}
+/* ͼ����ɫ����  end===================================================== */
+
+/* 2.a��ǩĬ����ɫ==================================================== */
+a {
+    color: #00c4b6;
+}
+/* ҳ��a��ǩ������ɫ*/
+#footer-wrap a {
+    color: #00FFFF;
+}
+/* ҳ���Զ����ֶ�������ɫ*/
+.footer_custom_text {
+    color: #fff942;
+}
+/* 4.�����ǳ���ɫ */
+
+.author-info__name {
+    color: #ff7242;
+}
+
+/* �����ɫ */
+.author-info__description  {
+    color: #6f42c1;
+}
+/* ͷ�������˵����ֺ����Ͻ�վ����ɫ--��ʱ��Ч*/
+
+#nav  #menus {
+    color: ##00FFFF;
+}
+
+/* ��ҳ������ɫ*/
+
+#page-header #site-title {
+    color: #00FFFF;
+}
+/* end===================================================== */
+
+/* 3.����ͷ��banner�ײ���Ӱ===============================================*/
+/* header#page-header.full_page {
+    box-shadow: 0 -80px 10px -2px #ffffff83 inset;
+    box-sizing: border-box;
+} */
+/* end====================================================================*/
+/* 4.���ò�����������====================================================*/
+#nav #blog_name{
+    font-size: x-large;
+}
+#nav:not(.fixed) #menus{
+    font-size: large;
+}
+/* end====================================================================*/
+
+/* 5.�������Ż� =============================================================*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(55, 99, 106, 0.699);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fc0a33d5;
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(198, 228, 28, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(172, 156, 7, 0.4) 50%,
+            rgba(248, 244, 19, 0.84) 75%,
+            transparent 75%,
+            transparent);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #ec29f3;
+}
+
+/* end=================================================== */
+
+
+/*6.�����ʽ==================================================*/
+body,
+html {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b1.cur),
+        auto !important;
+}
+
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*a��ǩ*/
+a:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*��ť*/
+button:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*i��ǩ*/
+i:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*ҳ��a��ǩ*/
+#footer-wrap a:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*��ҳ��*/
+#pagination .page-number:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*ͷ���ĵ�����*/
+#nav .site-page:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*�����ʽEND=======================================================*/
+
+/*7.kbd====================================================*/
+/*kbd {
+    display: inline-block;
+    color: #666;
+    font: bold 9pt arial;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px 5px;
+    margin: 0 5px;
+    background: #eff0f2;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #f5f5f5;
+    -webkit-box-shadow: inset 0 0 20px #e8e8e8, 0 1px 0 #c3c3c3, 0 1px 0 #c9c9c9,
+        0 1px 2px #333;
+    -moz-box-shadow: inset 0 0 20px #e8e8e8, 0 1px 0 #c3c3c3, 0 1px 0 #c9c9c9,
+        0 1px 2px #333;
+    -webkit-box-shadow: inset 0 0 20px #e8e8e8, 0 1px 0 #c3c3c3, 0 1px 0 #c9c9c9,
+        0 1px 2px #333;
+    box-shadow: inset 0 0 20px #e8e8e8, 0 1px 0 #c3c3c3, 0 1px 0 #c9c9c9,
+        0 1px 2px #333;
+    text-shadow: 0 1px 0 #f5f5f5;
+}
+
+/* end=================================================== */
+/* 8.ҳ���ɫ======================================= */
+#pagination .page-number {
+    background-color: cornsilk;
+}
+#pagination .pagination{
+    border-radius: 8px;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.57);
+    box-shadow: 0 0px 10px 5px #fffefe inset;
+}
+#pagination .pagination:hover{
+    -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
+    /* box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); */
+    box-shadow: 0 0px 10px 3px #74e0fcc7 inset;
+    background-color: #fffefec4;
+}
+a.extend.net {
+    background-color: cornsilk;
+}
+
+/* ================================================ */
+/* 9.mdͼƬ��ʽ =======================================*/
+img[src*='#img-radius'] {
+    border-radius: 9px;
+}
+/* ��ͼƬ��Բ�� */
+img{
+    border-radius: 9px;
+}
+/* ���������ʾ��ɫ�߿� */
+img:hover{
+    box-shadow: 0 0px 10px 5px #22ec2c;
+}
+#article-container figure.highlight:hover{
+    box-shadow: 0 0px 10px 5px #deec22;
+}
+/* end==================================================== */
+/* 10.����������ͣ��ʾ�߿�================================== */
+#aside-content .card-widget:hover {
+    -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
+    /* box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); */
+    box-shadow: 0 0px 10px 5px #06d8fdc7 inset, 0 0px 10px 5px #06d8fdc7;
+    
+}
+
+div.card-content {
+    box-shadow: 0 0px 10px 5px #fffeff inset;
+}
+
+/* 10.��ҳ�������ͣ��ʾ�߿�================================== */
+#recent-posts .recent-post-item:hover {
+    -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
+     /*box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); */
+    box-shadow: 0 0px 10px 5px #06d8fdc7 inset, 0 0px 10px 5px #06d8fdc7;
+    
+}
+
+/*div.recent-posts {  /*��Ƭ��Ե����
+    box-shadow: 0 0px 10px 5px #fffeff inset;
+}
+
+/* end=============================================================  */
+
+/* 11.�����ͣ��ʾ�߿���������ҳ===================================== */
+/* div#post {
+    /* background-color: rgba(165, 165, 165, 0.57); 
+    font-size: 16px;
+    box-shadow: 0 0px 10px 5px #fffefe inset;
+} */
+
+/*div#post:hover {
+    -webkit-box-shadow: 0 4px 12px 12px #fffefe inset;
+     box-shadow: 0 0px 10px 5px #fffefe inset,0 0px 10px 5px #fffefe ; 
+    box-shadow: 0 0px 10px 5px #fffefe inset, 0 0px 10px 5px #06d8fde8;
+     /*background-color: #04fcf08a;  ����͸��ɫ
+} 
+
+/* end========================================================= */
+
+/* 12.���±��⽥�� ===================================== */
+#post-info .post-title {
+    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* end========================================================= */
+
+/* 13.�������±����³�����=====================================  */
+#page-header #post-info {
+       bottom: 2rem;
+}   
+/* end========================================================= */
+
+/* 14.��ҳ��div������͸���ӱ߿� */
+/* main#content-inner.layout {
+    border-width: 30px;
+    padding-top: 20px;
+    background-color: #ffffff5e;
+    box-shadow: 0px 5px 10px 8px #ffffff;
+    margin: auto;
+} */
+    /* ����͸����ɫ */
+   /* background: #fdf6e3;
+}
+#page-header.not-index-bg {
+    height: 36rem;
+    box-shadow: 0 -80px 10px -2px #ffffff83 inset;
+    box-sizing: border-box;
+} */
+/* end========================================================= */
+/* 15.������Чȱ����ʽ��ʱͣ�� */
+/*.hans-container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    z-index: -1;
+}*/
+/* end========================================================= */
+
+/* 16.ҳ�ű���ͼƬ */
+#footer {
+   background-image: url(/img/bg/footer_bg.jpg) 
+  
+ } 
+/* end========================================================= */
+
+/* 17.ȥ��footer������ͣʳ��=====================================*/
+/* #footer {
+    background: transparent !important;
+} */
+body{
+background-color:#0090d6;
+}
+#footer {
+background: #00000000;
+}
+
+/* end========================================================= */
+/* 18.������ť================================================== */
+#post .tag_share .post-meta__tags {
+    background: #e5f1f8;
+}
+
+#post .post-copyright {
+    background: palegreen;
+}
+/*end========================================================== */
+/* 19.����ҳ�� */
+.flink#article-container .flink-list > .flink-list-item:before{
+    background: #13d64678;
+}
+/*end========================================================== */
+/* 20.��ҳ���������ͣ��ʾ�߿�-ռʱ���ܲ�ȫ========================== */
+/*#recent-posts  {
+    -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
+     box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); 
+    box-shadow: 0 0px 10px 5px #06d8fdc7 inset, 0 0px 10px 5px #06d8fdc7;
+    background-color: #fffefec4;
+}
+#recent-posts > .recent-post-item  {
+    box-shadow: 0 0px 10px 5px #fffeff inset;
+}
+
+/* end=============================================================  */
+
+
+/* 21.��ҳ�Զ�������ɫ������ɫ=======================*/
+#site-subtitle #subtitle {
+    background: linear-gradient(-45deg, #00BFFF, #FF4500, #FFFF00, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	font-weight: 600;
+}
+
+#subtitle:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+/* end=============================================================  */
+
+/* 22.��ҳ���¿�Ƭ��������========================== */ 
+#recent-posts > .recent-post-item >.recent-post-info {
+        width: 60%;
+		height: 200px;		
+}
+/* end=============================================================  */
+
+/* 23.�ƶ����Ż���ȥ���鵵����ǩ���������¡����桢��ֻ������վͳ�� */
+@media screen and (max-width: 800px) {
+    #aside_content div:not(:last-child) {
+        display: none;
+        font-size: 13px;
+    }
+}
+ /* end=============================================================  */
+
+/*24.�޸�����up����ͼ�����Ƶ�bug ��ͣʹ��==============================*/
+
+/* .fas {
+    line-height: 2;
+} */
+ /* end=============================================================  */
+ 
+/* 25.��Ȩ����ȥ���»���============================================= */
+
+.layout_post .post-copyright .post-copyright-info a {
+    text-decoration: none;
+    word-break: break-word;
+}
+ /* end=============================================================  */
+/* 26.��վ��ܼӿ�============================================= */
+ .layout {
+     max-width: 1300px;
+
+}
