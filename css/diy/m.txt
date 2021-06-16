@@ -1,0 +1,4 @@
+body div body-wrap.page  header#page-header.full_page {
+    width: 70%;
+
+}
