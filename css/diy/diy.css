@@ -255,11 +255,7 @@ a.extend.net {
   background: #6cec8e78;
 }
 
-/* 9.首页文章卡片里距离调整==========================  
-#recent-posts > .recent-post-item >.recent-post-info {
-  width: 60%;
-height: 200px;		
-}
+
 /* end=============================================================  */
 
 /* 10.移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计 */
@@ -422,16 +418,16 @@ img{
   background-image: url(/img/bg/footer_bg.jpg) 
  
 } */
-/*6.yedie kuandu */
+/*6.页底宽度 */
 #footer {
   width: 1170px;
   margin: 0 auto;
 }
-/*6.shouye mokuai juli tiaozheng */
+/*6.首页卡片距离调整 */
 #recent-posts > .recent-post-item {
-  height: 15em;
+  height: 11em;
 }
-/*6cebian mokuai lan juli */
+/*6侧边模块距离调整*/
 #aside-content .card-widget {
   margin-top: 1%;
 }
