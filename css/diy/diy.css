@@ -207,9 +207,10 @@ font-weight: 600;
   background-color: rgba(255, 255, 255, 0.57);
   box-shadow: 0 0px 10px 5px #fffefe inset;
 }
+/*5-1首页页码框颜色=======
 #pagination .pagination:hover{
   -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
-  /* box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); */
+  /* box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); 
   box-shadow: 0 0px 10px 3px #74e0fcc7 inset;
   background-color: #fffefec4;
 }
@@ -217,7 +218,8 @@ a.extend.net {
   background-color: cornsilk;
 }
 
-/* 6.文章标题渐变 wenzhang biaoti jianbian se====================== */
+
+/* 6.文章标题渐变 wenzhang biaoti jianbian se====================== 
 #post-info .post-title {
   background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -233,8 +235,12 @@ a.extend.net {
   -webkit-text-fill-color: transparent;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
+} 
 
+/*6-1====文章背景图片高度==== */
+#page-header.post-bg {
+  height: 300px;
+}
 /* 7.分享按钮================================================== */
 #post .tag_share .post-meta__tags {
   background: #e5f1f8;
