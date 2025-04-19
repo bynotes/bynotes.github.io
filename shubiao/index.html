@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>新买了一个无线鼠标 | 笔记</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="我记得2014年我买了一款罗技的M557无线鼠标，这款鼠标不带接收器，适合带有蓝牙的笔记本使用，我之所以会买无线鼠标是因为我看到我兄弟买了一个，使用还不错，挺稳定，所以我就买了同款的鼠标。以前感觉蓝牙鼠标使用的使用还需要在电脑端链接才可以用，一直觉得麻烦。几年后的我才发现原来带接收器的蓝牙鼠标和接收器是一套，他两个会自动对码，并不需要在电脑端设置。原谅我一直没有了解过无线鼠标。 前几天仓库剩下最后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新买了一个无线鼠标">
+<meta property="og:url" content="https://bynote.js.org/shubiao/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="我记得2014年我买了一款罗技的M557无线鼠标，这款鼠标不带接收器，适合带有蓝牙的笔记本使用，我之所以会买无线鼠标是因为我看到我兄弟买了一个，使用还不错，挺稳定，所以我就买了同款的鼠标。以前感觉蓝牙鼠标使用的使用还需要在电脑端链接才可以用，一直觉得麻烦。几年后的我才发现原来带接收器的蓝牙鼠标和接收器是一套，他两个会自动对码，并不需要在电脑端设置。原谅我一直没有了解过无线鼠标。 前几天仓库剩下最后">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:published_time" content="2021-06-18T02:11:50.000Z">
+<meta property="article:modified_time" content="2022-07-16T07:42:11.225Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="鼠标">
+<meta property="article:tag" content="无线">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/shubiao/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '新买了一个无线鼠标',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg/default_top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">新买了一个无线鼠标</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">新买了一个无线鼠标</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-16T07:42:11.225Z" title="更新于 2022-07-16 15:42:11">2022-07-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%88%86%E4%BA%AB%E7%94%9F%E6%B4%BB/">分享生活</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>我记得2014年我买了一款罗技的M557无线鼠标，这款鼠标不带接收器，适合带有蓝牙的笔记本使用，我之所以会买无线鼠标是因为我看到我兄弟买了一个，使用还不错，挺稳定，所以我就买了同款的鼠标。以前感觉蓝牙鼠标使用的使用还需要在电脑端链接才可以用，一直觉得麻烦。几年后的我才发现原来带接收器的蓝牙鼠标和接收器是一套，他两个会自动对码，并不需要在电脑端设置。原谅我一直没有了解过无线鼠标。</p>
+<p>前几天仓库剩下最后一款鼠标，拿来看了一下，还挺不错，磨砂质感的鼠标大小形状我都很喜欢，所以我感觉使用一下。这款MS3060鼠标装电池的方式很特殊，需要掀起你的头盖骨，才可以放下电池和拿出接收器。5个功能按键也属于办公鼠标的标配，反应灵敏，跟随很迅速，没有延迟，或者延迟极低。全身塑料质感很好，手感摸起来就像少女的手，细腻光滑。以前的时候我感觉不知名的小厂做的东西肯定不行，现在我感觉这个厂家做的还行。最起码手感很好，材料用的都是塑料，捏起来也没有嘎吱嘎吱的声响，挺不错。</p>
+<p>这款鼠标还很贴心，因为他还预留了一个otg转接口，未没有蓝牙的设备准备的还是比较贴心的，刚开始没有看说明书的时候我还以为这是一个充电口呢，幸亏没有测试充电，否则的话我估计这个鼠标可能得报销了。</p>
+<p>鼠标得卡扣就滚轮前面下方有两个，后面是两个小此贴直接吸附在下面得螺丝孔位里面得螺丝上的。创意很好，我那个150买的罗技的一捏嘎吱嘎吱的响，这款鼠标便宜还没有这个问题，这款鼠标长时间不用的话还会自动休眠，我一向认为只有大厂才有的技术和方案小公司原来也能做到，关键是这款鼠标价格才30元。有这么好的做工和傻瓜式的自动链接，还想要啥自行车啊。</p>
+<p><strong>·</strong> 推荐指数：★★★★★★★★★<br><strong>·</strong> 分数：9.5分</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bynote.js.org">林慕凡</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bynote.js.org/shubiao/">https://bynote.js.org/shubiao/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://bynote.js.org" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%BC%A0%E6%A0%87/">鼠标</a><a class="post-meta__tags" href="/tags/%E6%97%A0%E7%BA%BF/">无线</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/banjia/" title="wordpress博客完整搬家"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">wordpress博客完整搬家</div></div><div class="info-2"><div class="info-item-1">博客搬家意为为了使更换域名或是更换主机后的博客能正常运行所要做的工作。作为一名合格的博主，这些是必须要知道的。博客搬家分为以下几种情况： 1、更换域名但不换主机 2、不更换域名但更换主机 3、域名和主机全部更换 下面我们分情况来解决搬家的问题。 1、更换域名但不换主机单换域名的步骤：原域名301重定向到新域名→更改数据库内容。 （1）301重定向301重定向的目的是让原来搜索引擎收录的内容能够转向到新域名上，实现的方法有很多…… 如果是Linux+Apache的主机可以选择更改.htaccess文件，在此文件中插入以下代码： 12345678# BEGIN WordPress&lt;IfModule mod_rewrite.c&gt;Options +FollowSymLinksRewriteEngine onrewritecond %&#123;http_host&#125; ^原域名[nc]rewriterule ^(.*)$http://新域名/$1 [L,R=301]&lt;/IfModule&gt;# END 如果是Windows主机可以选择修改WordPress博客根目录下的wp-blog-header.php，在&lt;?php后加入： 1234567891011if (strtolower($_SERVER[&#x27;SERVER_NAME&#x27;])!=’原域名’)&#123;$URIRedirect=$_SERVER[&#x27;REQUEST_URI&#x27;];if(strtolower($URIRedirect)==’/index.php’) &#123;$URIRedirect=’/’;&#125;header(‘HTTP/1.1 301 Moved Permanently’);header(‘Location:http://新域名’.$URIRedirect);exit();&#125;  （2）使用phpmyadmin更改数据库内容因为在博客里上传的图片的URL都是原来的域名，所以我们需要把原域名的链接批量修改为新域名。 在phpmyadmin中选择WP数据库后执行以下SQL语句： 如何为WordPress博客完整搬家-WP酷 1UPDATE wp_posts SET post_content = REPLACE(...</div></div></div></a><a class="pagination-related" href="/zaijianqingchun/" title="你好，再见我们的青春"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">你好，再见我们的青春</div></div><div class="info-2"><div class="info-item-1">每年的这月都是证明自己的时候，也是人生的转折点，也是分离时刻，一起苦读的三年付出的心血，在这几天就要等到回报了，也是到了结果的时候了，三年中你我认识了很多人，也有各种复杂性格的人。当然一起也有各自爱慕的人，曾经一起去食堂吃饭，曾经一起去教室，还有曾经一起去的那片操场，多年以后各自是否还能记得。 10多年前的时候，网络才刚刚兴起，那时满大街都是网吧，那时候网吧还是很赚钱了，那时候我们不像现在人手一部电话，能买的起手机的是确实能用到了，一个黑白屏的手机就几千块。如果给喜欢的人打电话就是十几分钟，一般都是发短信，10元包150条，20元300条。每天晚上宿舍熄灯以后就开始了发短信的卧谈会，往往发过去等收回来，再发过去，等回来的时候可能就睡着了。 周末去同学家蹭饭，这是我最喜欢的事情，再学校待一周出来看什么东西都很新鲜，马路上的车水马龙，工厂上班的来去匆匆的工人。那时很向往上班族，可是现在对我来说，不上班不工作有钱花这才是我向往的生活。记得每次去同学家的时候大姨都是准备很多好吃的，男男女女再一起又说有笑很是开心。现在再也回不去的青春了。那个时候天很蓝，心里想的也是天马行空，想做一件事但是总是坚持不下来。下晚自习后，很多人都喜欢再操场跑步锻炼，我也跑过几周，但是始终还是放弃了。曾经我也做过一个让我很后悔的事情，但是木已成舟却也改变不了什么，但是如果可以重新选择我想我不会放弃。 谁的青春不残忍？你的？还是我的？人生要有两个轰轰烈烈，一个是轰轰烈烈的事业，一个是轰轰烈烈的爱情，两个我一个也没有做到，但我知道，这一切迟早会有的，好朋友就在身边，喜欢的人就在自己的视线里，辅助你的人就在你的正前方，宝贝，你的笑容如此甜美，但我只能将它留在视线里，不要让十年后的自己厌恶现在的自己，不要让过去来颓废现在，不要让自己的前途看不到光。 一花一世界，一叶一枯萎，一曲一声叹，一生为一人！ </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>仙剑十年莫失莫忘 | 笔记</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="十年前，山顶上的六个人对着星空大声的喊出的自己的理想 从此他们开始为了自己的理想迸发，也从那年开始，他们各奔东西、历经磨难。 在人生的每个阶段都有陪伴自己的人，但总免不了各奔东西。 儿时的玩伴或因搬家而走散，读书时要好的朋友也因考上不同的学校而开始疏远，情人总是分分合合，即便是伴侣也有一人会先离去。 陪你走过这一世的分分秒秒，只有你自己。 所以我经常会告诫自己：要认清自己，不要害怕犯错，人都是从各">
+<meta property="og:type" content="article">
+<meta property="og:title" content="仙剑十年莫失莫忘">
+<meta property="og:url" content="https://bynote.js.org/xianjian/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="十年前，山顶上的六个人对着星空大声的喊出的自己的理想 从此他们开始为了自己的理想迸发，也从那年开始，他们各奔东西、历经磨难。 在人生的每个阶段都有陪伴自己的人，但总免不了各奔东西。 儿时的玩伴或因搬家而走散，读书时要好的朋友也因考上不同的学校而开始疏远，情人总是分分合合，即便是伴侣也有一人会先离去。 陪你走过这一世的分分秒秒，只有你自己。 所以我经常会告诫自己：要认清自己，不要害怕犯错，人都是从各">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:published_time" content="2020-09-29T08:05:28.000Z">
+<meta property="article:modified_time" content="2024-02-19T01:01:18.978Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="仙剑">
+<meta property="article:tag" content="李逍遥">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/xianjian/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '仙剑十年莫失莫忘',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg/default_top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">仙剑十年莫失莫忘</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">仙剑十年莫失莫忘</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-09-29T08:05:28.000Z" title="发表于 2020-09-29 16:05:28">2020-09-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-19T01:01:18.978Z" title="更新于 2024-02-19 09:01:18">2024-02-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>十年前，山顶上的六个人对着星空大声的喊出的自己的理想</p>
+<p>从此他们开始为了自己的理想迸发，也从那年开始，他们各奔东西、历经磨难。</p>
+<p>在人生的每个阶段都有陪伴自己的人，但总免不了各奔东西。</p>
+<p>儿时的玩伴或因搬家而走散，读书时要好的朋友也因考上不同的学校而开始疏远，情人总是分分合合，即便是伴侣也有一人会先离去。</p>
+<p>陪你走过这一世的分分秒秒，只有你自己。</p>
+<p>所以我经常会告诫自己：要认清自己，不要害怕犯错，人都是从各种错误中发现自己真正想要的。</p>
+<p>要活好当下，在不伤害爱你的人的前提下，排除万难的活在自己想要的世界里，千万别逐众线路，也千万不要被无常的未来所困扰。</p>
+<p>以前翻译的 Being Erica 里 Dr. Tom 曾 Quote 过这句话，便是现今引导着我的准则了。</p>
+<p>Do not dwell in the past, do not dream of the future, concentrate yourself in the present。</p>
+<p>「不牵绊过往，不寄梦未来，活好当下」</p>
+<p>对于爱情，人们往往希望自己能像灵儿一般，倍受逍遥哥哥的宠爱，然而现实在找到那位陪你走过余生的他之前，往往是大家都不得不扮演着林月如的角色。</p>
+<p>虽然月如最终没有和李逍遥在一起，但是她却收获了灵儿永远也得不到的情感，介乎朋友与爱之间的「喜欢」。她成功的在逍遥心中占据了一块位置，一块让你觉得少了会不习惯的位置，我想大概这样也足够了。</p>
+<p>因为你总要试着习惯你眼中看到的和现实看到的是不同的两样东西。时间有长有短，有的感情持续半个世纪，有的感情在几年后戛然而止，然后却能让人回味一生。</p>
+<p>不管是好是坏，是苦是甜，难捱还是快乐，都要学会接受，因为接受是变好的开始。</p>
+<p>于自己而言，不管你现在是如日中天，还是桑榆暮景，都要明白世事的无常，从而感谢上天给你的每一个际遇，让你的这一刻独一无二，无法复制。</p>
+<p>李逍遥最终如愿的当上了大侠，扬名于世，但是十年之后，却找不回相约的人。遇一红颜，但红颜却为了拯救他而死，得几知己，却纷纷离去，最后连妻子也留不住。</p>
+<p>每个人都在描绘着自己的「李逍遥」，结局因际遇的不同而不断变化。</p>
+<p>世界上唯一不变的就是变化本身，准备好迎接未来的无常，莫问前程，但行己路。</p>
+<p>十年前，我十六，我只想快点长大，十年后，我二十六，却感叹时光走的太快，来不及执笔所有的梦想。</p>
+<p>你呢，还记得自己的十年之约吗？</p>
+<p>原文来自于：<a target="_blank" rel="noopener" href="http://www.mologer.cn/post/xianjianshinian.html">http://www.mologer.cn/post/xianjianshinian.html</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bynote.js.org">林慕凡</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bynote.js.org/xianjian/">https://bynote.js.org/xianjian/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://bynote.js.org" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BB%99%E5%89%91/">仙剑</a><a class="post-meta__tags" href="/tags/%E6%9D%8E%E9%80%8D%E9%81%A5/">李逍遥</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/shinian/" title="十年好久，好快"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">十年好久，好快</div></div><div class="info-2"><div class="info-item-1">前段时间2020年4月26我的博客小站申请了十年之约，到今天加入十年之约正好6个月，今天一次偶然的情况又打开了十年之约的网站，“十年之约，即从加入这个活动起，我们的博客十年不关闭，保持更新和活力”，十年时间很长，却也真的好快。在这个活动中也有一些站点头像熄灭了，或许换个LOGO又或许换了域名，又或许已经关闭的网站。。坚持很简单，维持却也好难。2006年毕业后和其他班级的两个同学一起踏上了去往东营的列车，三个人目地目标都是相同，心里也怀揣着同一个梦想。后来进入公司以后我们发现学校和社会真的天壤之别，平时口头上说的一起去上课变成了一起上班，开始还显别扭，慢慢的也就习惯了。这里没有人会将就你，上班迟到一分钟，就会获得一张30罚款单。做错就要接受惩罚，那么做出了贡献也会得到相应的奖励，这就是现实。随着时间的推移慢慢的，我们感觉在学校学的理论其实是那么的捉襟见肘，对工作上的帮助其实也只是做到了认识这个物品在生产线中起到什么作用而已。 每个月拿着700块的工资，还得跟着老师傅在后面抱着工具，还要学老师傅处理问题时的方法和判断问题的方法。也没有哪个老师傅去手把手的教，因为都是出门在外挣钱的，大家都懂的。每天三点一线的跑，生活也算很无聊，每天下班回去躺在床上就再也不想动了，每天走路估计得有5万步，好在不用我们新员工加班。就在这么无聊得工作中，我们把棱角磨平了，我们把梦想磨灭了，把自己也磨圆了，走过了风风雨雨得十年，现在得工作变得一切游刃有余，反而不想去做了，以前复杂得工作现在看着却简单不屑一顾。不是工作变了，而是我们得内心变了，心里充满着各种各样得复杂得东西。我不太聪明，也不想太聪明，因为太聪明的人会忘了什么是相遇，什么是朋友，什么是安宁，什么是喜乐，愿我们都能在这个薄情的世界里深情的活。有人朝九晚五却无家可归，有人浪迹天涯却心有所属。也许各行各业的你我都是那么的一言难尽，但也要在这个寡淡的世界热情的活。每个人的心里，都藏着一个了不起的自己。只要你不颓废，不消极，一直悄悄酝酿着乐观，培养着豁达，坚持着善良，始终朝着梦想前行，就没有到达不了的远方。成长大概就是一段旅程换一场懂得一个人的路途，是遇见一群人的过程。 </div></div></div></a><a class="pagination-related" href="/gongmian/" title="与所有家长共勉"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">与所有家长共勉</div></div><div class="info-2"><div class="info-item-1">&ensp;&ensp;今天在朋友圈看到一个老师写给家长的一封信，自信品味这封信后，感触良多，贴出来与大家分享。 &ensp;&ensp;不要抱怨陪孩子写作业界人，用不了几年，你看着孩子房间熄灭的台灯，一片漆黑,会怀念那个小小的背影，坐在那里，一会儿写字，会摸摸脑袋，一会玩玩笔，一会喊妈妈来一下一看着孩子空空的卧里，好想早上叫他起床上学，但此时，也许，他已经离你在千里之外， &ensp;&ensp;那间熟悉的卧室，已经成为他的旅馆，只会在假期暂住.而且，你好不容易盼到了假期，她还会有这样那样的理由晚归。每次假期还没过完，你还没有亲热够他就勾匆赶着去学校，因为他有他的圈子，他不再惹你生气,甚至和你说话的时间都越来越少，偶尔发信息来，简短声明，也不会再像小时候那样完全打开心扉，不论说什么你都会觉得听不够。 &ensp;&ensp;那个时候，你就会怀念他上学的日时,怀念那段独-无二陪伴他写作业的日子，所以不必厌烦陪孩子写作业的时间。总有一天，孩子自己会离开，你再看别人家背着书包上学的孩子，会眼晴放光,心里失落，会好想再有一个孩子，天天送他上学，晚上陪他写作业，偶你被他顶嘴偶尔发火，但河东狮吼的子终将一击不复返。 &ensp;&ensp;你终将明自，孩子给我们带来最大的欢乐不是成绩，而是陪伴.不是你上辈子造了什么孽，才会辅导他学习，而是你们修了几辈子的缘，才会者今生的相遇，好好珍惜他,趁他翅膀还没硬,还躲在我们的怀抱越他还没有长大，你还没有老，趁他现在还跟我们在起好好爱他们 2019、11  王老师 </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

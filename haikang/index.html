@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>海康摄像机修改密码 | 笔记</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="在监控安防工程中，有时客户会忘记或者我们在维护安装重装海康得摄像头得时候密码会不知道，那么我们该怎么办呢？前几天接到客户得一个项目，在现有得摄像头得基础上在添加几个监控头，一切都搞定后，在调试得时候遇到得问题，几年前用得海康得摄像头视频用户密码不知道，查找了相关资料才搞定。 海康得摄像头和我们普通得一般不一样，海康的摄像头有两个密码的，第一个是超级管理密码，第二个是视频用户密码，也就是我们录像机连">
+<meta property="og:type" content="article">
+<meta property="og:title" content="海康摄像机修改密码">
+<meta property="og:url" content="https://bynote.js.org/haikang/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="在监控安防工程中，有时客户会忘记或者我们在维护安装重装海康得摄像头得时候密码会不知道，那么我们该怎么办呢？前几天接到客户得一个项目，在现有得摄像头得基础上在添加几个监控头，一切都搞定后，在调试得时候遇到得问题，几年前用得海康得摄像头视频用户密码不知道，查找了相关资料才搞定。 海康得摄像头和我们普通得一般不一样，海康的摄像头有两个密码的，第一个是超级管理密码，第二个是视频用户密码，也就是我们录像机连">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:published_time" content="2021-04-24T09:28:23.000Z">
+<meta property="article:modified_time" content="2022-07-16T07:29:19.700Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="摄像机">
+<meta property="article:tag" content="密码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/haikang/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '海康摄像机修改密码',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg/default_top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">海康摄像机修改密码</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">海康摄像机修改密码</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-24T09:28:23.000Z" title="发表于 2021-04-24 17:28:23">2021-04-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-16T07:29:19.700Z" title="更新于 2022-07-16 15:29:19">2022-07-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9B%91%E6%8E%A7%E5%AE%89%E9%98%B2/">监控安防</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>在监控安防工程中，有时客户会忘记或者我们在维护安装重装海康得摄像头得时候密码会不知道，那么我们该怎么办呢？前几天接到客户得一个项目，在现有得摄像头得基础上在添加几个监控头，一切都搞定后，在调试得时候遇到得问题，几年前用得海康得摄像头视频用户密码不知道，查找了相关资料才搞定。</p>
+<p>海康得摄像头和我们普通得一般不一样，海康的摄像头有两个密码的，第一个是超级管理密码，第二个是视频用户密码，也就是我们录像机连接摄像机的时候用的密码，而超级密码是我们调试管理摄像机用到的密码。</p>
+<ol>
+<li>我们需要用到海康威视400SADP密码重置工具<br>我们需要用到海康威视400SADP密码重置工具 链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1rMPo0AyhqyPhHHmv1rY2bA">https://pan.baidu.com/s/1rMPo0AyhqyPhHHmv1rY2bA</a><br>其他版本的SADP无效。<br>把笔记本电脑插入到交换机和监控摄像机组成局域网，完后打开SADP开始搜索摄像机，搜到摄像机后在列表里会看到。</li>
+<li>重置超级密码<br>在列表里，勾选需要重置密码的摄像机，点击右下角重置密码，单机二维码，会弹出二维码，然后在手机微信上关注海康威视客户服务公众号，点击公众号的下方菜单栏中的“贴心服务”- “密码重置”-“SADP扫码恢复”， 拉到最下方，点击“我已准备好，下一步”，扫描设备二维码，获取安全码，或输入个人邮箱，获取导入文件；若您收到是安全码，则选择手动输入方式；若您收到的是XML格式的导入文件，则选择文件导入方式，重置新密码。</li>
+<li>修改开启DHCP<br>勾选需要修改的设备，在右面输入重置的管理密码，开启DHCP后点保存，再次搜索摄像机。这会搜索一个新的IP地址，然后使用这个IP，在浏览器地址栏，输入这个IP地址，就会进入该摄像机内部，输入超级密码。</li>
+<li>修改视频用户密码<br>登录进入后，点网络，右面选择网络下面有NV协议，记得开启，然后下面有视频用户和密码，输入新的就OK了。没有的话可以新建一个。</li>
+<li>关闭DHCP，改回原来的固定IP</li>
+</ol>
+<p>关闭DHCP改回原来的固定IP，在录像机里填上修改的视频用户密码后，改摄像机画面就出来了。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bynote.js.org">林慕凡</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bynote.js.org/haikang/">https://bynote.js.org/haikang/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://bynote.js.org" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%91%84%E5%83%8F%E6%9C%BA/">摄像机</a><a class="post-meta__tags" href="/tags/%E5%AF%86%E7%A0%81/">密码</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/tuisong/" title="说一说博客推送的问题"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">说一说博客推送的问题</div></div><div class="info-2"><div class="info-item-1">选择博客的源码和空间我也很纠结，目前我采用的是hexo，这个博客源码的好处是无后端，数据都是保存在本地的，不用担心的数据的问题，但是也有不好的地方，就是写作的时候必须需要电脑，没有电脑就不能写，我还有个博客用的是wordpress，这个源码的好处是只要有设备能上网就可以写博客，但是呢需要额外的开销购买空间。hexo放在了github的免费托管，但是对空间他要求的挺严的，图片有限制，网速还有点慢，对于我这种不想备案的人来说只能这样了，平时也遇到很多推送的问题。 这个问题我查了很多不知道怎么解决，有说是网络的问题，还有说其他原因的都试过了不行，今天我找了一个可行的方法。 问题描述：先是出现错误：error：spawn failed…然后经过一些博客的操作会出现以下问题：fatal: cannot lock ref ‘HEAD’: unable to resolve reference HEAD: Invalid argument error: src refspec或者：error: src refspec HEAD does not match any.等等总结一下：问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容。 解决办法： 删除.deploy_git文件夹;输入1git config --global core.autocrlf false 然后，依次执行：123hexo cleanhexo ghexo d 问题解决。暴力直接，有效。————————————————  </div></div></div></a><a class="pagination-related" href="/tianshitong/" title="天视通录像机忘记密码和修改"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">天视通录像机忘记密码和修改</div></div><div class="info-2"><div class="info-item-1">现在市场上很多种安防监控，但是往往也有忘记密码的时候，其实就那么几个密码，但是呢有的用户自己设定的却忘记了。那么下面介绍如何在忘记密码的情况下找回和修改新密码。  录像机显示器任意位置点击鼠标右键–关闭系统–注销，继续任意位置点击鼠标右键–系统设置–忘记密码，弹出二维码界面。  我们拿出手机在手机上打开天视通的App找到扫一扫，对准屏幕的二维码，就会出现一个临时密码，我们先用临时密码登入系统。  录像机显示器任意位置点击鼠标右键–系统设置–里面修改用户密码即可。   </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

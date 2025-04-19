@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>客户都学会讲“行话”了 | 笔记</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="现在网上有很多教程，也有很多知识，当然学到得东西也很多，比如我们买了一把椅子，商家发货发来的没有组合的成品，这是方便商家在路上运输，到货后需要我们自己按照说明书组装起来，当然你买的肯定要比线下便宜，因为这其中就省去了安装费、人工费，对于不同的商品甚至可能还去省保修费。网购确实很省事，也很省钱，对于动手能力差的就不划算了。最近遇到几个客户也是很奇葩，来到店里维修手机外屏，检测和检查了一下显示屏触控屏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="客户都学会讲“行话”了">
+<meta property="og:url" content="https://bynote.js.org/weixiu/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="现在网上有很多教程，也有很多知识，当然学到得东西也很多，比如我们买了一把椅子，商家发货发来的没有组合的成品，这是方便商家在路上运输，到货后需要我们自己按照说明书组装起来，当然你买的肯定要比线下便宜，因为这其中就省去了安装费、人工费，对于不同的商品甚至可能还去省保修费。网购确实很省事，也很省钱，对于动手能力差的就不划算了。最近遇到几个客户也是很奇葩，来到店里维修手机外屏，检测和检查了一下显示屏触控屏">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:published_time" content="2021-03-20T06:39:05.000Z">
+<meta property="article:modified_time" content="2022-07-16T07:42:51.552Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="维修">
+<meta property="article:tag" content="手机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/weixiu/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '客户都学会讲“行话”了',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg/default_top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">客户都学会讲“行话”了</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">客户都学会讲“行话”了</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-03-20T06:39:05.000Z" title="发表于 2021-03-20 14:39:05">2021-03-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-16T07:42:51.552Z" title="更新于 2022-07-16 15:42:51">2022-07-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>现在网上有很多教程，也有很多知识，当然学到得东西也很多，比如我们买了一把椅子，商家发货发来的没有组合的成品，这是方便商家在路上运输，到货后需要我们自己按照说明书组装起来，当然你买的肯定要比线下便宜，因为这其中就省去了安装费、人工费，对于不同的商品甚至可能还去省保修费。网购确实很省事，也很省钱，对于动手能力差的就不划算了。<br>最近遇到几个客户也是很奇葩，来到店里维修手机外屏，检测和检查了一下显示屏触控屏没有任何问题，只是外屏盖板破损，客户要求只换盖板。我们提供了报价了后客户说太黑了，网上一个盖板5元你们要100，其实客户根本没有想过，维修的整个过程需要做什么。他们只单纯的考虑一块耗材的配件的价格了，于是我们送给他了一块屏幕盖板，并告诉他网上要5元，我们送给你不要你花钱，你自己换把。客户在网上的买到的只是一个配件，没有买服务当然便宜，所以说做事看事不要只看皮毛，即使在网上学会说这些话，你也要去了解他的过程。<br>线下实体店可是要交房租、水电费、人工费、配件费、还有后续的保修费，这些客户根本就不了解。所以看事要看全面。有的客户还非常的不讲理，属于不可理喻的那种，到处跟人家说这家太黑，5元的要100，小丑是你自己，误会别人污蔑别人，在你了解真相后，你的话给商家造成的负面损失给赔偿吗？<br>其实这样的事情得互相理解，虽然我也只是打工的，看到有些不公平的事情我就想说两句，其实客商都得互相理解，我们平时买东西也好，看病也好，道理都一样，一个机器用一下就几千，却没有人嫌贵，盖房子你光买材料不给人家工钱，房子能变出来吗？一样得道理，我家冰箱坏了让师傅来修，师傅驱车好几里路来到检查了一下就换了个开关，收费50元，一个小开关仅有1块多，我感觉这不贵很合理，咱们不会，即使强修的话是不是要查各种资料，而且还耽误使用，会的话不就省50元吗？对吧，理解才是万岁。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bynote.js.org">林慕凡</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bynote.js.org/weixiu/">https://bynote.js.org/weixiu/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://bynote.js.org" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BB%B4%E4%BF%AE/">维修</a><a class="post-meta__tags" href="/tags/%E6%89%8B%E6%9C%BA/">手机</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/mingtian/" title="我们永远也不知道明天和意外哪个先来"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">我们永远也不知道明天和意外哪个先来</div></div><div class="info-2"><div class="info-item-1">有句话是这样讲的：我们永远也不知道明天和意外哪个先来。每一次离别，都是一场小型的死亡。 这是因为，余生又少了一天，相见又少了一面，我们所拥有的一切，在离别后都会渐渐失去曾经的模样。 人生仿佛就是一次次突如其来的相遇，还有一次次猝不及防的离别。 生离死别，对于任何人而言，都是人生不可承受之重。 经历过至暗时刻，我们才会真正理解了那句话：生死之外，人生皆是擦伤。我们追逐梦想，很多人都忘记了珍惜和父母这一生一次的关系。 我们总是以为我们还有很多时间陪伴父母，陪伴身边人，但殊不知，随着岁月的增长，每个人都在老去。 他们的耳朵慢慢听不清我们的呼喊，眼睛也越来越模糊，身子越来越单薄。 凡事不要等以后，凡事也别奢求重来，我们抓住梦想，但也要珍惜身边的拥有。 时常感叹，上帝并不公平，留给人的时间太少，大部分人生在打拼中度过，留下来享受的时间却不多，而且人的生命又是那么的脆弱。 我们总以为来日方长，却不知这世间有太多遗憾来不及收场。 子欲养而亲不在，这人世间最深的惆怅。 清欢想送大家一句在《送你一颗子弹》中的话： 每个人的心里，有多么长的一个清单，这些清单里写着多少美好的事，可是，它们总是被推迟，被搁置，在时间的阁楼上腐烂。 所以，哪有什么来日方长，告别就在此时此刻。 趁着年华尚在，赶紧去做，赶紧去爱。不要等以后，凡事也别奢求重来，请你好好珍惜当下。 时常感叹，上帝并不公平，留给人的时间太少，大部分人生在打拼中度过，留下来享受的时间却不多，而且人的生命又是那么的脆弱。 我们总以为来日方长，却不知这世间有太多遗憾来不及收场。 </div></div></div></a><a class="pagination-related" href="/315/" title="提振消费 从心开始"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">提振消费 从心开始</div></div><div class="info-2"><div class="info-item-1">中央广播电视总台第31届“3·15”晚会于3月15日20点在央视财经频道现场直播，并在央视财经客户端和央视频客户端、央广《经济之声》进行了同步直播。今年的“3·15”晚会围绕“提振消费 从心开始”的主题，分别从“健全数字规则 构建互联网经济信心”“关注公共安全 拷问业界良心”“关注服务品质 用诚信唤真心”三个方面关注当前消费维权领域的新热点和新现象。我看了全程直播，边看直播边感叹科技进步的同时，也带来了很多的负面的黑暗，健全的数字安全规则是所有互联网企业应该遵守的规则，不能一味的追求利益，让一些个别的企业或者个人去做违法乱纪的事情。人工智能、移动互联、大数据、云计算、电商直播、网络支付、线上订单等新技术、新产业、新业态和人们新的工作方式、交往方式、生活方式不断涌现，不断更新着我们的消费版图，不断拓展着消费的边界，而这也给保护消费者合法权益和市场监管提出了新的课题。去年年底召开的中央经济工作会议强调“要依法规范发展，健全数字规则。要完善平台企业垄断认定、数据收集使用管理、消费者权益保护等方面的法律规范。要加强规制，提升监管能力，坚决反对垄断和不正当竞争行为。”基于人工智能和大数据的人脸识别技术正在深度融入民生服务、城市治理、安防保障等各个领域，“3·15”晚会调查发现一些家装企业、汽车4S店、超市等商户在消费者不知情的情况下，违规利用人脸识别技术，通过监控摄像头追踪消费者行程，记录消费者信息。这样的人脸信息如果被不法分子获取或者。。那么后果真的是不敢想象，我们的隐私何在！ 3.15晚上还报道了求职网站的智联招聘、前程无忧、猎聘平台的简历竟然可以花钱下载而且建立本人还毫不知情，这些被一些有心之人还拿去倒卖，流入黑市场，细思极恐，隐私不复存在啊！早几年我还在智联上投过简历。晚会上还有报道了一些打着清理手机垃圾的名号的软件在背地里却做着不为人知的秘密，并且还诱导人下载其他的东西，弄得手机越来越卡，把魔爪伸到老年人群，年轻人如果不仔细甄别有时也会中招，我也中过招55555。应该严惩这些不法企业，还老年人一个干净得互联网环境。 晚会还报道了名表维修得乱象，本来一个小小的毛病，报价上千，真是不敢想象啊。 注：部分图片和文字转载自央视财经 </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

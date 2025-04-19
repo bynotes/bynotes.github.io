@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>笔记 - 青春生活记录者...</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="记录生活中的精彩缤纷为生活中的小惊喜而欢呼心逢知己清茶一壶也醉人">
+<meta property="og:type" content="website">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="https://bynote.js.org/page/4/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="记录生活中的精彩缤纷为生活中的小惊喜而欢呼心逢知己清茶一壶也醉人">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="笔记,生活,故事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/page/4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '笔记',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/bg/head_home.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">笔记</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/qianxun/" title="曾以为自己是白龙最后却活成了无脸男">曾以为自己是白龙最后却活成了无脸男</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-21T09:28:34.000Z" title="发表于 2020-08-21 17:28:34">2020-08-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/yutian/" title="雨中的绿叶">雨中的绿叶</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-20T08:15:00.000Z" title="发表于 2020-08-20 16:15:00">2020-08-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">这个夏天是个多雨的夏天，连日来的高温终究被一场场的大雨浇熄，高阳似火的天气终于告一段落，不知道明天天晴以后是否还是高温，当雨落在公路上时明显看到热气在上升，就像是沸腾的水冒着，闷热的空气终于也全部被凉爽的空气代替，烦躁不安的心情，也在慢慢的冷却。周围繁杂的噪声也随着雨点的降落，而慢慢的消失，远处在忙碌的汽车也停下了脚步。 院落里长出了说不出名气的植物，雨水顺着宽大的叶子滴落在了地上，很快的就渗入了泥土里，空气中随着雨水的增多，也飘洒呢泥土的芬芳。这是一个花开的季节，这是一个青春绽放的季节，也是人生一次转角的季节。 满怀激动的心情坐上了中考的大车，奔向了决定人生转向的战场，在接下来的几天里领队老师安排着各项任务，以及讲述着各种不允许和需要注意的地方，随后遍自由活动，其实我们也能想到，同学们这是最后在一起了，过了这几天明天大家就将各奔东西，所以晚上我们在空闲没有任务的情况下我们出去聚餐，由于还要回去宿舍所以大家以饮料带酒，频繁举杯，时间太久记不得当时说了什么，感慨很多，同学几个时而沉思时而向往。最后分开得那刻都湿了眼角。 三天忙碌得考前备战和考试，最后在结束得时候大家都松了口气，无论成败过几天一便知晓，随后遍进入了两个月得大暑假，其实这个暑假对于我们来说不知有多少人欢喜，多少人忧，其中得悲喜也只有当事人能体会到。曾经那些在一起有说有笑上课下课的小伙伴再也见不到了，曾经那些一起拼搏在课堂上的老师和同学不见了，不知曾经的小伙伴上课一起看课外书的日子还记得吗？不知曾经一起许愿兴奋不已的冲动还在不在？不知曾经在一起逃课的激情还记得吗？曾经一切都已曾经，过去的时光都已消逝。!多年以后希望我们都能记住，自己今天的模样。从千疮百孔到刀枪不入，从颠沛流离到人间冷暖，如今的我们，依然期待平淡生活的来日方长，也同样接受猝不及防的大梦一场。小时候我们期待远走，长大后我们期待归途，从词不达意到言不由衷，从单枪匹马到向生活妥协，或许这就是成长。岁月打磨的从来都不是梦想，不是信念，而是当游子登高远眺也无法穿透千山万水的眼睛。愿我们都能拥有进一寸的勇气，也有退一尺的从容，有仗剑天涯的勇敢，也有脚踏实地的安稳。 这个夏天雨还是雨，而你我我们已不是当年的少年，走过山重水复的流年，拥抱彼此起彼伏的人生。成年人的世界，一边是漂泊一边是坦途，关于选择的对错，只能自己去感悟 。...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/gengxin/" title="博客小站重新更新部署">博客小站重新更新部署</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-18T05:48:11.000Z" title="发表于 2020-08-18 13:48:11">2020-08-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">这几天天气真的是太热了，热的快要撑不住了，现在的降温的方式，除了少穿衣服就是依靠我的小电风扇了，真是不敢想象在这样的天气里如果没有电风扇和空调，对于那些习惯依赖空调的人们会怎样呢？现在每天坐在座椅上，都能感觉到屁股下面火气，汗水都湿透了，每天都是这样。即使是这样我还要感谢我的小风扇，带给的丝丝微风。 站长是个超级菜鸡，本来是升级主题无奈弄得整个站都废了，好在以前写得博客数据都在，要不然我得疯，没有办法只能重新克隆然后在一点点得修改回原来得样子，由于是新得版本的版本在一些小的地方可能和原来回不太一样了。没关系,在Butterfly主题作者也开发了很多的新功能，当然速度也会快很多了。在此感谢开发者的付出。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/ruguo/" title="如果没有如果">如果没有如果</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-15T09:22:44.000Z" title="发表于 2020-08-15 17:22:44">2020-08-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">假如把犯得起的错,能错的都错过。 应该还来得及去悔过，假如没把一切说破。 那一场小风波，将一笑带过。 在感情面前，讲什么自我。 要得过且过 ，才好过 。 全都怪我，不该沉默时沉默，该勇敢时软弱，如果不是我。 误会自己洒脱，让我们难过，可当初的你。 和现在的我，假如重来过，倘若那天，把该说的话好好说。 该体谅的不执着。 第一次听这首歌还是在广播里面听到的，那天晚上坐在出租车上，看着窗外来回穿梭的霓虹灯，耳边就响着这首音乐，思绪也在脑海中盘旋乱飞。一件事情，当我们处理完之后发现不是那么的完美，又或者是在与一个自己很在意的人聊天说错话时，总会后悔的在心里默默的说一句“如果怎样怎样…..”现实的生活中不会存在如果怎样的可能，时间不会神奇的穿越时空。 我们每个人都不存在神奇的特异功能来达到某种需求，脚踏实地的用双手来创造的才是收获，一条大路无论经过多少的泥泞，他还是会通向远方。幻想是不切合实际的想法，努力的把没有的变成有的才是收获。 我们呵护多年的一个人（她）或者一件物品，那么当我们遇到更好的，那么会用来对比一番，然后我们可能会放手，只有亲自尝试了，才知道放弃的美好，所以我们又开始努力寻找曾经的美好，找回过去那种没有改变的过的延续，可是曾经的已然变成了曾经，再也不会变成现在了。悔恨使一个人可以自暴自弃，使一个人不知所措，而又无法改变。 珍惜当下，且行且珍惜。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/chengzhang/" title="成长和远方">成长和远方</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-25T06:56:50.000Z" title="发表于 2020-07-25 14:56:50">2020-07-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">每个人都是一个独立的个体，没有谁一定属于谁，也不是所有的一厢情愿都能两情相悦。不为取悦别人而委屈自己，不为照亮别人而消耗自己。好的爱情是相互温暖，共享孤独，善待自己也善待他人生活中有各型各色的人，有的人有美丽的容貌，有的人有有趣的灵魂,有的人有聪明的大脑，有的人有傲人的背景，不管是月入百万飞黄腾达，还是月薪3000游走四方，真正的价值不在于浮夸的外在，应该是真实的内心，岁月不止 这是一把杀猪刀，更是金钟罩铁布衫，为我们沉淀了最真的情感和温暖的陪伴。  但是总是有人问你你的梦想是什么，连期末考试的作文题都不曾放过你。然后我们就会违背心愿的胡编乱造，老师，医生，科学家，航天员。其实我们真的没有什么感天动地的梦想，如果一定要有的话，那么我希望我们可以成为很厉害的人，能在困境中挣脱，也能在平淡中享受，有爱人一路同行，有兄弟并肩作战。还有家人爱的等待，今年的六一我想对兄弟们说，我们不在是小时候肆无忌惮，我们也永远如小时候纯粹善良！无论生活中的得到失去或是成功失败。世俗平庸或是风生水起，我们始终以豁达。开朗的心面对世界。告诉自己 接受自己不好的同时，也努力让自己变得更好。即便平凡又普通，知足于脚下也向往远方。相信岁月的长河中 一定会留下 我们笑着奋斗的轨迹。 从我们远走他乡 背上行囊的那一刻起 我们就成了家乡的过客 虽然时刻想家 但人生没有绝对的安稳 即然选择了远方 就要怀揣一颗从容淡定的心 漂泊的日子 虽然没有那盏等你归家的灯 也没有那碗给你暖胃的粥 但我们始终相信...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/yuanfang/" title="我们过去的过往">我们过去的过往</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-25T06:35:42.000Z" title="发表于 2020-07-25 14:35:42">2020-07-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">我始终明白身边的人行如流水，来来回回擦肩而过，能够一直相伴左右的不过寥寥几人，所以我特别感谢那些素未谋面，并且愿意一直陪着我的你们， 带你们感受我的喜怒哀乐，以及不一样的风土民情，但我更希望将来有一天，你们可以带着我一起感受祖国的山河，也正是因为一起经历的这些点点滴滴，构成了我们隔江隔海的青葱岁月。 从少年到成年，从最初的稚嫩，到如今还保留了几分羞涩。我们始终忘了打动过内心的人，也放不下陪伴过生命的情，最深的爱总是风雨兼程，最浓的情总是冷暖与共。 一辈子不长，希望我们都够把彼此放在心上的人，好好珍藏！怜香惜玉是男人的风度，死心塌地是女人的态度，希望我们披星戴月，不辞万里，抛开世俗之后，遇见的一定是，一个无论悲喜，都愿意拥你入怀的人。 不知道从什么时候开始，我们喜欢用温柔这个词来形容一个人。后来才发现我们渴望的温柔的人，应该是指在你两眼泛花时，轻轻递上纸巾的人。是认真听你说话并且有回应的人，是在你用力嘶吼批判这个世界的不公时，轻轻抱住你的人。长路漫漫顾虑重重，希望你能和一个温柔的人做朋友，如冬天的暖阳，夏天的晚风。失去的难以回来，回来的，不再完美。有一个词叫过去，我们都回不去；有一段感情叫曾经，只能是曾经有些人回来了，心却回不来；有些情继续了，却不是原来的感觉。中间有一段岁月，无法弥补；陪伴总有一处空白，充满遗憾。不是所有的人都能在原地等你也不是所有的情，都能完好如初。若爱，就不要随意放弃，放弃了就不要在回头。 那些年我们都遇见了那个自己喜欢也喜欢自己的人，那是一份简单而又纯粹的欢喜，我始终相信当年的那句我喜欢你，或许不是我一定会喜欢你十年，20年甚至一辈子，而是当时的情到深处让我们有勇气在那一刻说出我喜欢你，而正是因为那句我喜欢你在日后的生活里无数个崩溃的瞬间里，仍然记得自己也曾是别人眼中值得，如今的我们，随不求风月，但也绝不妥协，又潦草一生。希望我们都能在心底里，经年累月的为自己砌，一座城关，保护心底里最纯美善良的那一部分。不管以后我们疏远成什么样子，请记得我曾经我对你的好都是真的，剩下的路就不陪你走了，照顾好自己的生活，可能我只是你生命中的一个过客，但你不会再遇见第二个。无论我们经历多少世事变迁，沧海桑田，也始终相信，岁月如歌，跋山涉水梦想的远方有彼此。 </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/shenghuo/" title="我们的生活"><div class="post-bg" style="background: h"></div></a></div><div class="recent-post-info"><a class="article-title" href="/shenghuo/" title="我们的生活">我们的生活</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-19T02:57:15.000Z" title="发表于 2020-07-19 10:57:15">2020-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">这世间事物千千万，却终究还是抵不过心之所向，因为选择所以热爱，因为热爱所以执着，有一首歌唱女人独有的天真和温柔的天分 要留给真爱你的人 虽然生活并没有让我们一帆风顺 但至少我们具备了排除万难的勇敢 和坚持做自己的执着。清风明月一个人也可以；但是在吃饭这件事上应该是人越多才越有味道；希望我们都能与志同道合的朋友，在不曾看见的岁月里相扶左右！ 生活的路有千千万万条，我们每个人都走着自己该走的路，你谨慎小心如屡薄冰，别人也未必顺风顺水一路平坡。成年人的世界各有各的艰难，我们可以走的很慢，但坚决不要后退。 他小时候喜欢天真烂漫，长大后喜欢岁月静好，天真烂漫是老天爷的馈赠。但岁月静好，却不是每个人的岁月到最后都能静好，相信所有好的好运，背后都藏着孜孜不倦的努力和执着。相信所有的处事不惊，都有着浮浮沉沉的过往，所有单枪匹马的路上 都有一颗砥砺前行的心。可能我们对生命最好的回应，就是努力着把自己活成自己想要的样子，有坎坷的才是旅程，有风雨的才是生活。 小的时候 （小时晚儿）我们被父母保护的很好，他们希望我们做一个善良的人，可是生活总是安排我们与一些尖酸刻薄的人相遇。慢慢的你会发现他们并不讨厌，甚至有点可怜，到底是经历了怎样的成长，才会让他们选择用这样的方式来保护自己 我们改变不了冥冥之中的自由安排 。但是我们可以改变自身对事物的见解，十年前的我们靠小聪明和小运气 ，一直快乐和取巧地活着，十年后才明白，原来所有的幸运都是努力埋下的伏笔。 这十多年我始终心存侥幸，如果当初我不来，生活会不会变得更精彩，后来才发现生活中没那么多如果当初，不管重来多少次人生都一定留有遗憾，成年人的选择没有错误或者正确，我们不过是通过自己的努力，让当初的选择变得正确✅，虽单枪匹马，却仿佛带着一万雄兵。过去的生活里经历的每一场风雨，我们都一一沉淀在心，所以有了后来收放自如的大气和沉稳。积淀了见识与阅历的豁达走南闯北的路上，希望我们都能有志同道合的朋友，温暖无数孤独的日子。也有有缘相助的贵人驱赶寒冬岁月的阴霾。 我大东北人，天生仗义，懂得感恩。不忘穷困潦倒时帮我们度过困境的人 。更不忘在悲伤失望时陪我们风雨同行的人 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/rensheng/" title="人生都要经历成长">人生都要经历成长</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-19T02:26:52.000Z" title="发表于 2020-07-19 10:26:52">2020-07-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">何为漂泊?五湖四海无根底, 可否具体流离失所,离乡千万里,可否再具体。家人朋友渐行渐远，可否更具体，盼归家。 当我们踏过千山万水 走过千万里路，在经历了所有跌跌撞撞 和人情冷暖之后，才发现我们想要的，不过是一个感同身受的拥抱和一份独属于自己的温柔。 也希望在奔跑路上的我们，要懂得赠与他人鼓励的同时，也一定会分的一份暖阳。 这世间事物千千万，却终究还是抵不过心之所向，因为选择所以热爱，因为热爱所以执着，相信人生永远都不会辜负用心用力，竭尽全力并且热爱生活的我们，努力的意义大概就是当。所有美好的事物奔向我们的时候，我们仍然拥有与之匹配的力量，有能力留住它并且觉得一切都是值得。 长大了之后你才会发现，你百听不厌的歌中一定写满了你的故事，你人前人后一饮而尽话到嘴边又咽下去的名字一定是你日夜思念的人。成年人的世界没有不可治愈的伤痛也没有不能结束的沉沦，相遇总是有原因，有的人是恩赐，有的人是教训！！！关于成长，可能是很长很长一段时间的心路历程，也可能是在平淡无味的一瞬间。但无论怎样，希望我们永远都不会，为了目的而忘记初衷。就像风的名字。从来都不是他去的方向，而是他来时的样子。今天大踏步的后退，正是为了明天可以向前一大步。 成年人的世界谁不是，走一程期许一程回望一程，可来路无可眷恋，值得期待的只有远方，希望我们深藏在记忆里的那个人 如今都可以过得幸福且安稳。成年人的世界各行各业，你我都是那么的一言难尽全力以赴，即便是太阳，也有人嫌它过于刺， 即便是月亮，也有人嫌它不够皎洁。即便是处在低谷的我们，也坚决不放弃对生活的热爱和执着。不负家人，不负光阴 不负前程，不负自己。 这世相信每个人的成长方式都大有不同，有的人在书中得到启示，有的人走过一些弯路也会有所收获，无论我们处在怎样的高度 都会在上天有所安排的长度里，不断的去探索他的宽度。 5岁和15岁之间有十年，15岁和25岁之间有一生，脚下的路是南北东西，人生的路是悲欢离合，如果你觉得阳光正好，那就无所谓春去秋来，如果你的深情致爱去了远方，那我还是希望你能一如往常。 人这一辈子 万人爱不如一人伴，不如一人懂，其实不是所有人都值得你掏心掏肺，成年人的世界各有各的天各有各的阴晴圆缺你走过的路不过是别人眼中的风景你错过的人不过是别人的下一次相遇成熟的从来都不是岁月而是经历。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/biyeji/" title="【致青春】毕业季|以梦为马,不负韶华">【致青春】毕业季|以梦为马,不负韶华</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-10T01:51:47.000Z" title="发表于 2020-07-10 09:51:47">2020-07-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">又是一年毕业季，2020年的毕业季不是普通的一年，在疫情面前人们没有退缩勇往之前，每个人孩子学生都在家远程听课，学业依旧蒸蒸日上，这一代的孩子有很多出生在非典那一年，网上页流传说生于非典，考于新冠，加油！迎接你们的是新的征程，这就是一个人生的转折点。 离别的六月，像支伤愁的歌，在黄昏的柔情里，弥漫满校园。四载飞快，流远不复来。即将要分开，留言聚会皆苍白，道不出我半点心怀。一腔言语，两行泪，惟愿兄弟风雨中明白，你我同在，别离并不代表着分开，我们心依旧还在。在青春的坎坷道路上，我们撒下多少的泪水汗水，是我们在最脆弱的时候有你们一路相伴，给我温柔的怀抱，在即将分开的时候，请记住我。 时光荏苒岁月如梭，06年的青春是那么的遥远，但是脚步却离我很近，思绪就像长着翅膀穿越时光长河，飞回那个充满活力的时代。还记得那片绿绿的草坪，还记得办公楼后那片假山花园，友谊在这之间不停的穿梭，还记得那条又长又宽的街，每周5放学后必走的一条路，有时在昏黄的路灯下走过，有时在宁静的夜晚路过。 宿舍几人来自天南地北，心却集在了一起，宿舍的好东西总是一起分享着。一起学习，三年的时间，老师唯一没有骗我们的是这三年真的很短。无论是校园绿茵下还是教室自习室，又或者是在食堂大快朵颐时都留有我们的足迹。 六月，分别，有些人或许永远都不会在见到，告别了那些三年从未说过一句话的同学，但是却依旧能记得那陌生的脸，告别了那些曾经不和的好友，却依旧没有和好的朋友。同时告别了那青涩的爱恋，也告别了整个青春。永远也回不去的青春。曾经那些喜好，那些厌恶的或许会随着时间而发生改变。 前些日子翻出毕业证又找到了毕业照，看着既熟悉又陌生的脸，只能回忆那些点滴的过往，现在的或许有的腰缠万贯，也可能有穷困潦倒，生活也不尽人意。曾经那么讨人厌的人现在释然了，曾经那些讨人厌的老师，现在看着也没那么别扭了，其实那也是为我们好。曾经所谓的面子而不肯和好的同学现在也感觉无所谓也释然了。曾经满头黑发的老师现在估计也有了白发了。或许以后有些人我们永远不会在见到，但是心里回忆里永远也不会忘记曾经的那些人。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/putao/" title="院子里的葡萄树">院子里的葡萄树</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-06T05:22:23.000Z" title="发表于 2020-07-06 13:22:23">2020-07-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></span></div><div class="content">小的时候家里没有什么钱，家家户户都在自己家的房前屋后种些瓜果，都说种豆得豆种瓜得瓜。街上经常有拖拉机拉着各种水果叫卖的，80年代不少都是吆喝着用粮食来换，那个时候的粮食很是短缺，收成也不好，所以很是珍贵。 现在生活水平提高了，人们也不珍惜粮食了，在饭店餐馆随处都可见浪费粮食的现象。  小时候家里都是隔着好久才用麦子换一点时季的水果，每次都是开心跳来跳去，有一次从邻居家挖了一颗葡萄树，从此以后每年都可以吃上新鲜的葡萄了，在当时这是多么奢侈的事情啊。 每年夏天放学都要来到葡萄架下，看着绿葱葱的叶子，期盼着快快长大快快结果，阳光从叶子中间照射下来，当微风吹过一晃一晃的，心里渴望的心情又多了几分。 夏日，安静的下午只能听到远处树上的蝉鸣，忙碌的人们在午休，热的睡不着觉的在葡萄架下的桌子上写着作业，汗水参透了额头。心里胡思乱想着，赶紧写完作业可以出去玩，那时的我们并没有手机，没有空调，没有游戏机，但是那时的我们依旧很快乐。 周末，写完作业后就疯的跑到快要干涸的河沟里去抓鱼，弄得满身得黑泥，回家之前还要去鱼塘里洗一遍，免得回家一顿打。有时抓到鱼也岸边找几根树枝加起来，穿上鱼烤着鱼，虽然没有现代得那些佐料，不过当时也算是美味了。 时间如指间的流水，想抓都抓不住了，从前童年的时代，青少年的时代都成了过去，美好的记忆都放在心底最深处了。现在在新的地方盖了房子，老家都很少去了，每次回去站在熟悉的地方，总能看到过去熟悉的影子。回忆着年少的欢声笑语。 又是一个炎热的夏季，当我再次抬头看到当年的那颗葡萄树时，心里依旧想到的是当时在架子下面发生的点点滴滴，有为了得到一件玩物而开心放声大笑，也有因为做错的事而担心过，更有为了某个喜欢的小动物死去而伤心过。 每次站在葡萄架下太阳透过树叶照射下来，映在地方稀稀拉拉的树荫，藤上结着一朵朵的晶莹的葡萄，树还是当年的那颗树，而人却不是当年那个我了，随着年龄的增长对社会的阅历增加，我们每个人的内心都不在那么的纯粹了，被利益、虚荣、自傲等充斥着，每个人都带着一副伪善的面具，也只有在晚上一个人的时候才能卸下伪装。 </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="page-number" href="/page/6/#content-inner">6</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/"><span class="card-category-list-name">人生感悟</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%88%86%E4%BA%AB%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">分享生活</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A2%A6%E9%AD%87%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">梦魇笔记</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">生活随笔</span><span class="card-category-list-count">42</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%9B%91%E6%8E%A7%E5%AE%89%E9%98%B2/"><span class="card-category-list-name">监控安防</span><span class="card-category-list-count">3</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%B4%A0%E5%85%BB/" style="font-size: 1.1em; color: #999">素养</a> <a href="/tags/%E7%99%BD%E5%AB%96/" style="font-size: 1.1em; color: #999">白嫖</a> <a href="/tags/%E6%97%A0%E8%84%B8%E7%94%B7/" style="font-size: 1.1em; color: #999">无脸男</a> <a href="/tags/%E6%94%B9%E5%8F%98/" style="font-size: 1.1em; color: #999">改变</a> <a href="/tags/%E5%A5%8B%E6%96%97/" style="font-size: 1.1em; color: #999">奋斗</a> <a href="/tags/%E5%8F%8B%E6%83%85/" style="font-size: 1.1em; color: #999">友情</a> <a href="/tags/%E5%8D%81%E5%B9%B4/" style="font-size: 1.1em; color: #999">十年</a> <a href="/tags/%E5%86%8D%E8%A7%81/" style="font-size: 1.1em; color: #999">再见</a> <a href="/tags/%E7%A7%8B%E5%A4%A9/" style="font-size: 1.1em; color: #999">秋天</a> <a href="/tags/%E5%8D%83%E5%AF%BB/" style="font-size: 1.1em; color: #999">千寻</a> <a href="/tags/%E6%9D%8E%E9%80%8D%E9%81%A5/" style="font-size: 1.1em; color: #999">李逍遥</a> <a href="/tags/%E5%87%BA%E7%A7%9F/" style="font-size: 1.1em; color: #999">出租</a> <a href="/tags/%E9%95%BF%E5%A4%A7/" style="font-size: 1.1em; color: #999">长大</a> <a href="/tags/%E8%91%A1%E8%90%84%E6%A0%91/" style="font-size: 1.1em; color: #999">葡萄树</a> <a href="/tags/%E6%97%A0%E7%BA%BF/" style="font-size: 1.1em; color: #999">无线</a> <a href="/tags/%E5%A5%94%E8%B7%91/" style="font-size: 1.1em; color: #999">奔跑</a> <a href="/tags/%E8%A5%BF%E6%B8%B8%E8%AE%B0/" style="font-size: 1.1em; color: #999">西游记</a> <a href="/tags/%E9%A2%84%E8%A7%88/" style="font-size: 1.1em; color: #999">预览</a> <a href="/tags/%E4%BB%99%E5%89%91/" style="font-size: 1.1em; color: #999">仙剑</a> <a href="/tags/%E6%B6%88%E8%B4%B9/" style="font-size: 1.1em; color: #999">消费</a> <a href="/tags/%E5%AE%B6%E9%95%BF/" style="font-size: 1.1em; color: #999">家长</a> <a href="/tags/%E6%98%8E%E5%A4%A9/" style="font-size: 1.1em; color: #999">明天</a> <a href="/tags/%E5%8A%AA%E5%8A%9B/" style="font-size: 1.1em; color: #999">努力</a> <a href="/tags/%E9%A3%9F%E7%94%A8/" style="font-size: 1.1em; color: #999">食用</a> <a href="/tags/%E5%A4%84%E4%BA%8B/" style="font-size: 1.1em; color: #999">处事</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.1em; color: #999">生活</a> <a href="/tags/%E9%9B%A8%E5%A4%A9/" style="font-size: 1.5em; color: #99a9bf">雨天</a> <a href="/tags/%E6%89%BE%E5%9B%9E/" style="font-size: 1.1em; color: #999">找回</a> <a href="/tags/%E6%89%8B%E6%9C%BA/" style="font-size: 1.1em; color: #999">手机</a> <a href="/tags/%E6%8E%A2%E9%99%A9/" style="font-size: 1.1em; color: #999">探险</a> <a href="/tags/%E8%B4%AD%E7%89%A9/" style="font-size: 1.1em; color: #999">购物</a> <a href="/tags/%E9%81%93%E5%BE%B7/" style="font-size: 1.1em; color: #999">道德</a> <a href="/tags/%E8%AF%A1%E5%BC%82/" style="font-size: 1.1em; color: #999">诡异</a> <a href="/tags/%E5%AD%A9%E5%AD%90/" style="font-size: 1.1em; color: #999">孩子</a> <a href="/tags/%E6%81%8B%E7%88%B1/" style="font-size: 1.5em; color: #99a9bf">恋爱</a> <a href="/tags/%E6%A8%A1%E7%B3%8A/" style="font-size: 1.1em; color: #999">模糊</a> <a href="/tags/%E9%A6%96%E4%B8%AA/" style="font-size: 1.1em; color: #999">首个</a> <a href="/tags/%E6%8E%A8%E9%80%81/" style="font-size: 1.1em; color: #999">推送</a> <a href="/tags/%E7%A9%BF%E8%B6%8A/" style="font-size: 1.1em; color: #999">穿越</a> <a href="/tags/%E4%B8%8A%E5%8F%B8/" style="font-size: 1.1em; color: #999">上司</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/" title="查看更多"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2025/04/">
+          <span class="card-archive-list-date">四月 2025</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2023/12/">
+          <span class="card-archive-list-date">十二月 2023</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/07/">
+          <span class="card-archive-list-date">七月 2021</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/06/">
+          <span class="card-archive-list-date">六月 2021</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/05/">
+          <span class="card-archive-list-date">五月 2021</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/04/">
+          <span class="card-archive-list-date">四月 2021</span>
+          <span class="card-archive-list-count">3</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/03/">
+          <span class="card-archive-list-date">三月 2021</span>
+          <span class="card-archive-list-count">4</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2021/02/">
+          <span class="card-archive-list-date">二月 2021</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">57</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2018-12-31T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-04-19T07:57:43.625Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  btf.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = ["欢迎光临林慕凡的博客小站！","好记性&#44;来自于笔记！"]
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

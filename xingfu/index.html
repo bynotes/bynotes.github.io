@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>又是一个雨天 | 笔记</title><meta name="author" content="林慕凡"><meta name="copyright" content="林慕凡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="2009年3月27日今天一个女同学告诉她要结婚了，前几天同样一个男同学也告诉我他要结婚了，但是由于我个人的种种原因不能去参节他们的婚礼，喝一杯他们的喜酒，但是在远方的我会为他们祈祷幸福一生。看到他们的幸福我又想到了自己的孤独，其实真的想寂寞的日子有个伴，日子在忙也有人一起吃早餐。我也算是经历了两次失败的恋爱，但是我们都不属于对方。我深爱着他们可是，每次伤心的还是我自己，也许缘分还没到吧，缘分来的时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="又是一个雨天">
+<meta property="og:url" content="https://bynote.js.org/xingfu/index.html">
+<meta property="og:site_name" content="笔记">
+<meta property="og:description" content="2009年3月27日今天一个女同学告诉她要结婚了，前几天同样一个男同学也告诉我他要结婚了，但是由于我个人的种种原因不能去参节他们的婚礼，喝一杯他们的喜酒，但是在远方的我会为他们祈祷幸福一生。看到他们的幸福我又想到了自己的孤独，其实真的想寂寞的日子有个伴，日子在忙也有人一起吃早餐。我也算是经历了两次失败的恋爱，但是我们都不属于对方。我深爱着他们可是，每次伤心的还是我自己，也许缘分还没到吧，缘分来的时">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bynote.js.org/img/avatar.png">
+<meta property="article:published_time" content="2020-04-20T23:44:00.000Z">
+<meta property="article:modified_time" content="2024-02-19T01:03:10.686Z">
+<meta property="article:author" content="林慕凡">
+<meta property="article:tag" content="雨天">
+<meta property="article:tag" content="朋友">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bynote.js.org/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bynote.js.org/xingfu/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '又是一个雨天',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/diy/diy.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg/default_top.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">笔记</span></a><a class="nav-page-title" href="/"><span class="site-name">又是一个雨天</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-list"></i><span> 博文</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 目录</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-photo-video"></i><span> 生活</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-fw fa fa-image"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-tasks"></i><span> 岁岁语</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/2019/"><i class="fa-fw fas fa-camera-retro"></i><span> 记忆2019</span></a></li><li><a class="site-page child" href="/2020/"><i class="fa-fw fas fa-handshake"></i><span> 相约2020</span></a></li><li><a class="site-page child" href="/2021/"><i class="fa-fw fas fa-baseball-ball"></i><span> 你好2021</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-fw fa fa-coffee"></i><span> 互动</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/liuyan/"><i class="fa-fw fa-fw fa fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-fan"></i><span> 更多</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fluid/"><i class="fa-fw fa-fw fab fa-google-wallet"></i><span> 液体</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/fireworks/"><i class="fa-fw fa-fw fab fa-yelp"></i><span> 烟花</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/mikutap//"><i class="fa-fw fa-fw fab fa-studiovinari"></i><span> mikutap</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="http://djt.xiabor.com/"><i class="fa-fw fa-fw fab fa-yin-yang"></i><span> 毒鸡汤</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/sakura/"><i class="fa-fw fa-fw fab fa-envira"></i><span> 樱花雨</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/count-down/"><i class="fa-fw fa-fw far fa-clock"></i><span> 倒计时</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://xiabor.com/dot/"><i class="fa-fw fa-fw far fa-dot-circle"></i><span> 小圆圈</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.foreverblog.cn/"><i class="fa-fw fas fa-pencil-alt"></i><span> 十年之约</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">又是一个雨天</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-20T23:44:00.000Z" title="发表于 2020-04-21 07:44:00">2020-04-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-19T01:03:10.686Z" title="更新于 2024-02-19 09:03:10">2024-02-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BA%BA%E7%94%9F%E6%84%9F%E6%82%9F/">人生感悟</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>2009年3月27日<br>今天一个女同学告诉她要结婚了，前几天同样一个男同学也告诉我他要结婚了，但是由于我个人的种种原因不能去参节他们的婚礼，喝一杯他们的喜酒，但是在远方的我会为他们祈祷幸福一生。<br>看到他们的幸福我又想到了自己的孤独，其实真的想寂寞的日子有个伴，日子在忙也有人一起吃早餐。<br>我也算是经历了两次失败的恋爱，但是我们都不属于对方。我深爱着他们可是，每次伤心的还是我自己，也许缘分还没到吧，缘分来的时候可能档也档不住。</p>
+<p>我喜欢雨又讨厌雨后的泥泞，我喜欢风但是又讨厌它卷起的尘土。我喜欢彩虹但是却是那么的一刹那，为什么。。。。。。<br>有时候我感觉我的幸福就是那雨后的彩虹，和蒲公英的种子是一样，都是在瞬间的绚烂，过去以后就是那永远也回不来的记忆了，时间可以轮回，万物可以在来一次，为什么我的幸福却是在那遥远的未知的天涯海角啊！<br>心里沉重，每天都是在假装微笑来掩饰心中的那份落寞，每天早晨都鼓励自己暗示自己这是一个美好的一天……..<br>每天独自走在丽影双双的街头时，有谁知道我这颗曾经拥有过的幸福的心啊，我也期望有一个不需要浪漫，不需要多么的丰富，不需要多么美好的幻想。<br>第一失去的幸福的那瞬间，我没有挽留，也许挽留会换会一切，但是我还是随她而去了，后来我把我的网名该成了哭着说后悔，写了许多的过去的记忆。第二次我与期待的擦肩而过的时候我彻底的绝望了，我把我的名字该成了幸福瞬间，现在的我不在期望，因为现在的我痛彻心扉了。<br>心中的那个美丽我不需要她是漂亮的，但我希望是善良…..<br>我只是固执的一篇又一篇的听着MY HEART WILL GO,可是你的心呢?永恒到底有多远呢?<br>音乐一直进行着,雨痛快的下着,像谁的终于承受不住的哀伤的眼泪,一如我的心雨扯天扯地的下着,没有停止的迹象.想念,怀念那流水般一去不返的日子.飞絮飞絮,对于自己都不确定的飘零者又怎能祈求风中的永恒?这一刻在风吹起花瓣如同破碎的流年里,我又一次泪流满面,哭得像一个孩子.</p>
+<p>有一把伞撑了很久,雨停了也不肯收,有一束花闻了许多,枯萎了也不肯丢,有一种人,想念了很久,仍不能忘怀,即使到了青丝变白发也能在心底深深保留.我在这个保留的雨季透过朦胧的眼光看雨看你,许久未曾有过的酸楚,一如满天的清泪再也法盈盛那怕一丝丝空气的重量,就这样一倾而泄.只是想再看看你的眼,你的脸,想跟你再一起走,如果可能可以我宁愿眼所有的星光金部落,只因你的眼已是我生命中最亮的光芒.而今星光已然损落,我却再也不见眼中最亮的光芒.我似乎又迷失了,我只是迷夫了自己.<br>一直都拒绝太过理性的文字,太过真实的语言,我只是痛恨害怕太过真实的疼痛,像风吹皱的水面,慢慢的,一点点的,一圈圈的扩大着的疼痛,那种仿佛永远也烫贴不平的疼痛.对于你,我只是害怕,失去真实的感觉.<br>音乐还在继续,世界在这一刻显得格外的安静,安静到我能听到血液沸腾的声音.生活似乎永远缺着一个大块的缺口了,即使听见自己的血液沸腾的声音仍感觉着缺口的引力.节奏慢慢的变慢了,雨却仍在大颗大颗的下着,在沉默中一次性的暴发.想你犹如伤口上的那一块淤青,外面看起只是一块浅淡的斑,按上却隐隐的疼,疼下去天在疼痛的寂静中终于黑下来了,再也看不见黑夜中倾情而下的雨泪.心也在想念的折腾中疲累.沸腾的世界在黑夜的撕扯下沉沉睡去.我也只盼望快快的进入梦乡,让我在另一个空间再次的拥有;或者让我在又一次的醒来时已经老去,不管是坎坷或是平凡,让我不再为未知的未来而徘徨.而此刻,我的眼却在这沉静的黑夜中翟翟的闪烁,燃烧着地老天荒……</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bynote.js.org">林慕凡</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bynote.js.org/xingfu/">https://bynote.js.org/xingfu/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://bynote.js.org" target="_blank">笔记</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9B%A8%E5%A4%A9/">雨天</a><a class="post-meta__tags" href="/tags/%E6%9C%8B%E5%8F%8B/">朋友</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/wx.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/zfb.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/xiaoyuan/" title="校园生活请珍惜"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">校园生活请珍惜</div></div><div class="info-2"><div class="info-item-1">今天看了一篇日志，颇受感慨，因为我有遗憾过，所以我想贴出来了，但愿与我一样的朋友请珍惜。 不管你现在是大学生活，还是大专生活，请你多拍些关于校园的照片，或者和同学嬉笑间的纯真友情，还是和同学之间激烈的演讲。无论是什么事情拍下来，做个留念毕业后的多年以后你看到这些时，仿佛这还好像是昨天发生的事情一样，思绪随着你的照片又回到那一年那一刻。回味永远是甜蜜的，请珍惜。 当年我上学的时候什么都东西都贵，不能说贵，主要当时的经济条件还不允许，一部最破的手机都在800元以上。那会死2003年，而且手机功能单一，也只能发短信和打电话，几年的时间过去了 ，放眼今年的数码市场，手机功能发达的已经很发达了，原来的直板，滑盖，侧滑，旋转，到现在的智能，手写，高像素手机能日益白出，更有几百元就买个千万像素的数码相机等等，可是时间已经过去了，我们的回忆，我们的校园生活没有留点的证据，唯一可以怀念的就是一张毕业照片，仅此而已。 失望，遗憾，总是在事情多年以后才会出现，当时真的没这个条件，那是单纯的我们也没有考虑到今天的我们会有遗憾，这种遗憾是用多少金钱也无法买到的财富，这是你一辈子的记忆留影，对于现在的同学们来说这是很容易办到的，希望你们珍惜，在你们多年以后拿出来的时候，那种自豪和快乐，是无法用语言和词语来形容的无法比喻的。 现在你还有多少同学能联系上，现在你还有多少同学能在一起吃饭喝酒，因为大家都在忙碌着自己的工作和生活，筹划自己的幸福人生，唯一我们能做到时确是拿出照片独自自己躺在床上，对着照片傻笑。这是一种幸福的微笑。 现在我们大家都已经长大了，懂了许多的事情，也有不少同学好友都工作了，无论你在哪，也不管你现在是在上学还是在上班，拿出你的手机相机和同学同事在一起多拍些照片，留下点你生活的记忆影像，无论你的职业下一站式哪，都会有回忆到上一站的快乐的时候，记住无论在好的记忆不如你拍下来。 因为这是你多年以后的一笔不小的财富。 </div></div></div></a><a class="pagination-related" href="/80houqq/" title="80后的QQ都喜欢隐身"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">80后的QQ都喜欢隐身</div></div><div class="info-2"><div class="info-item-1">由于命运的我出生在80年代，算是一个标准的80后，80年的人大多数都是内向、含蓄、不好意思，不敢去表白自己想要的一切，包括爱情在内，我算是一个多愁善感的人，在我的人生里有许许多多的烦恼，正好，有朋友使我不那么郁闷。慢慢的长大后，毕业后，性格随着时间的推移而变化着，变的是那么的开朗、明朗、阳光，但是在某一件事还是不那么开阔。 我们那代喜欢听收音机，现在我还是有这个习惯，没事的时候躺在床上，随手打开收音机，心情随着广播里面的音乐慢慢的放松。放松。放佛漫步在一个无边无际的时空之中，一片安静。周围的环境也随着旋律的变化而变化着。 在校的5年中，学习了计算机专业也就自然的学会了上网，聊QQ，去同城聊天室，各大论坛的去跑。看着各种各样的帖子，自己也跟帖发帖，聊心情，聊学校里的新闻。聊周边的奇人怪事，聊大千世界。慢慢的结识了一大群网上的好朋友，慢慢的也就忽略了身边的朋友，慢慢的变的和朋友没有什么话题，不知道该说什么好了。 毕业了，解放了，一群大学生都涌向社会，去在社会了在深层的去锻炼去磨练。工作了上班了，我们空闲的时间少了，谈恋爱的时间少了，身边单身的女孩更是没有了，原来我们这几年都在一个虚拟的世界里度过了，后悔？但是曾经是在这个“世界”里获得了，现实里无法实现的快乐，得到了以前无法得到的东西。 闲暇的时间没了，都被工作占去了，一天下来累的不行，哪有心情去上网，慢慢的时间一晃1年过去了，在这1年里我离开了网络，离开了所谓的我的那些好朋友，今天来上网看看 ，闲的没事干了，正好又是歇班。打开小企鹅顺手点了隐身， 我顿了一下，细想“为什么我会点了隐身？”是啊 ，为什么呢？ 时间久了，现在我们宿舍也有网线了，现在上网都隐身了，也许这已经成了习惯，或者现在长大了不喜欢那种虚拟的世界了，而是把心转入了真实的世界里了，变的在网上不喜欢聊天，养成了只看帖子不回帖子的习惯。网上我的好友里再也不会有“滴滴滴滴￥%%#……”的信息提示音了，因为我离开了你们太久了，时间会让人淡忘一切，时间也会让人改变一切。唯独改变不了的是已经成为了一种习惯！ </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">林慕凡</div><div class="author-info-description">记录生活中的精彩缤纷<br>为生活中的小惊喜而欢呼<br>心逢知己清茶一壶也醉人</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">57</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">89</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/lfs090"><i class="fab fa-weibo"></i><span>微博搜索：林慕凡</span></a><div class="card-info-social-icons"><a class="social-icon" href="/liuyan/" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="/liuyan/" target="_blank" title="微信"><i class="fab fa-weixin"></i></a><a class="social-icon" href="https://github.com/bynotes" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:27216@163.com" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://weibo.com/lfs090?is_all=1" target="_blank" title="微博"><i class="fab fa-weibo"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div>🌸欢迎各位小伙伴访问我的博客小站，用妙笔生花记录精彩瞬间。🍓🍁即使星光在微弱，也会照亮我前进的方向！🍀 </br>👯小伙伴也可以在<i class="fas fa-share-alt-square"></i> <a href="https://weibo.com/lfs090" target="_blank" rel="noopener external nofollow noreferrer">微博</a> 关注我哟</p></div><BR><img src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io/img/psb.gif"><br><span class="inline-tag green">💪座右铭:&nbsp;有生之年把github代码装满！</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zuoy/" title="zuoy">zuoy</a><time datetime="2025-04-19T07:53:28.000Z" title="发表于 2025-04-19 15:53:28">2025-04-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/daminghu/" title="第二次来大明湖">第二次来大明湖</a><time datetime="2023-12-06T06:07:51.000Z" title="发表于 2023-12-06 14:07:51">2023-12-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/banjia/" title="wordpress博客完整搬家">wordpress博客完整搬家</a><time datetime="2021-07-28T00:15:26.000Z" title="发表于 2021-07-28 08:15:26">2021-07-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/shubiao/" title="新买了一个无线鼠标">新买了一个无线鼠标</a><time datetime="2021-06-18T02:11:50.000Z" title="发表于 2021-06-18 10:11:50">2021-06-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/zaijianqingchun/" title="你好，再见我们的青春">你好，再见我们的青春</a><time datetime="2021-05-29T23:49:24.000Z" title="发表于 2021-05-30 07:49:24">2021-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 林慕凡</div><div class="footer_custom_text"><a  src="https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/micp.png"><span>🌸 记录生活的小惊喜!🌸</span></a><!-- 运行时间设置 --></div><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<!-- 十年之约 -->
+<br>  
+<span> 本站已加入<a href="https://www.foreverblog.cn/" target="_blank" rel="nofollow noopener"> <b>十年之约</b></a> </span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'xsaWQL3IDE7RtBq0gEalXK6W-MdYXbMMI',
+      appKey: 'zhMAc6wugOXYYyeEhCURqXib',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/diy/timeDate.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,432 @@
+/* CSS Document为林慕凡|笔记bynote.cn/适配Butterfly主题 【自定义综合CSS】引入 */
+
+/*  tubiao yanse 图标按钮颜色*/
+/* 1.添加图标颜色 ===========================================*/
+/* 导航菜单 MUENcaidan*/
+i.fas.fa-home {
+  color: mediumturquoise;
+}
+i.fa.fa-list {
+  color: #00FF7F;
+}
+i.fa.fa-archive {
+  color: blue;
+}
+i.fa.fa-folder-open {
+  color: orange;
+}
+i.fa.fa-tags {
+  color: rebeccapurple;
+}
+i.fas.fa-photo-video {
+  color: #FFFF00;
+}
+i.fa-fw.fa.fa-image {
+  color: red;
+}
+i.fa-fw.fa.fa-music {
+  color: Purple;
+}
+i.fas.fa-tasks {
+  color: mediumturquoise;
+}
+i.fas.fa-user-ninja {
+  color: LightGreen;
+}
+i.fa-fw.fa.fa-paper-plane {
+  color: teal;
+}
+i.fas.fa-camera-retro {
+  color: DarkOrchid;
+}
+i.fas.fa-handshake {
+  color: #32CD32;
+}
+i.fa-fw.fa.fa-coffee {
+  color: Sienna;
+}
+i.fa-fw.fa.fa-comments {
+  color: DarkTurquoise;
+}
+i.fa.fa-link {
+  color: teal;
+}
+i.fa.fa-heart {
+  color: #4876FF;
+}
+i.fas.fa-fan {
+  color: #912CEE;
+}
+i.fab.fa-qq {
+  color: #FF4500;
+}
+i.fab.fa-weixin {
+  color: #00CD66;
+}
+i.fab.fa-github {
+  color: #7B68EE;
+}
+i.fas.fa-envelope {
+  color: #FF6347;
+}
+i.fab.fa-weibo {
+  color: #A020F0;
+}
+i.fas.fa-paw.fa-spin {
+  color: #1E90FF;
+}
+i.fas.fa-archive {
+  color: #7A67EE;
+}
+i.fas.fa-history {
+  color: #10f1f1;
+}
+i.fas.fa-tags {
+  color: #ee61cf;
+}
+i.fas.fa-tag.article-meta__icon {
+  color: blueviolet;
+}
+i.fas.fa-inbox.article-meta__icon {
+  color: springgreen;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta__link {
+  color: #FF0000;
+}
+i.fas.fa-film {
+  color: dodgerblue;
+}
+i.fas.fa-chart-line {
+  color: crimson;
+}
+i.fas.fa-bolt {
+  color: crimson;
+}
+i.fas.fa-baseball-ball {
+  color: #FF6347;
+}
+
+/* 2.a标签默认颜色biaoqian yanse==================================================== */
+a {
+  color: #00c4b6;
+}
+/* 页脚a标签字体颜色yejiao*/
+#footer-wrap a {
+  color: #00FFFF;
+}
+/* 页脚自定义字段字体颜色yejiao zidingyi yanse */
+.footer_custom_text {
+  color: #fff942;
+}
+/* 4.博主昵称颜色 zhanzhang yanse*/
+.author-info__name {
+  color: #ff7242;
+}
+
+/* 简介颜色 jianjie yanse*/
+.author-info__description  {
+  color: #6f42c1;
+}
+/* 头部左上角站名颜色zuoshangjiao yanse*/
+
+#nav .site-name {
+  color: #00FFFF;
+}
+
+/* 首页标题颜色toubu biaoti shouye*/
+
+#page-header #site-title {
+  color: #00FFFF;
+}
+
+/* 3.首页自动打字颜色渐变颜色shouye zidong dazi yanse =======================*/
+#site-subtitle #subtitle {
+  background: linear-gradient(-45deg, #00BFFF, #FF4500, #FFFF00, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+font-weight: 600;
+}
+
+#subtitle:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* 4.滚动条优化gundongtiao kuandu yanse  =============================================*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(55, 99, 106, 0.699);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fc0a33d5;
+  background-image: -webkit-linear-gradient(45deg,
+          rgba(198, 228, 28, 0.4) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(172, 156, 7, 0.4) 50%,
+          rgba(248, 244, 19, 0.84) 75%,
+          transparent 75%,
+          transparent);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #ec29f3;
+}
+
+
+/* 5.页码底色=yema dise========================== */
+#pagination .page-number {
+  background-color: rgb(183, 233, 154);
+}
+#pagination .pagination{
+  border-radius: 8px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.57);
+  box-shadow: 0 0px 10px 5px #fffefe inset;
+}
+/*5-1首页页码框颜色=======
+#pagination .pagination:hover{
+  -webkit-box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3);
+  /* box-shadow: 0 4px 12px 12px rgba(245, 20, 215, 0.3); 
+  box-shadow: 0 0px 10px 3px #74e0fcc7 inset;
+  background-color: #fffefec4;
+}
+a.extend.net {
+  background-color: cornsilk;
+}
+
+
+/* 6.文章标题渐变 wenzhang biaoti jianbian se====================== 
+#post-info .post-title {
+  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+} 
+
+/*6-1====文章背景图片高度==== */
+/*#page-header.post-bg {
+  height: 300px;
+}
+/* 7.分享按钮================================================== */
+#post .tag_share .post-meta__tags {
+  background: #e5f1f8;
+}
+
+#post .post-copyright {
+  background: palegreen;
+}
+
+/* 8.友链页面 */
+.flink#article-container .flink-list > .flink-list-item:before{
+  background: #6cec8e78;
+}
+
+
+/* end=============================================================  */
+
+/* 10.移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计 */
+@media screen and (max-width: 800px) {
+#aside_content div:not(:last-child) {
+  display: none;
+  font-size: 13px;
+}
+}
+
+
+/*11 页脚footer */
+/* 渐变色滚动动画 */
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0 50%;
+  }
+}
+#footer {
+  background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#footer:before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+/* yang  shi  bu  fen样式部分  */
+/* 1.tou bu tu pian  ===========================================*/
+/* toutu */
+#page-header {
+  width: 1170px;
+  margin: 0 auto;
+}
+#page-header.nav-fixed #nav {
+    width: 1170px;
+}
+/*xiu fu tou tu dou dong*/
+/*#page-header.full_page {
+    background-attachment: unset;
+}
+
+
+/*2.鼠标样式shubiao yangshi  he  zhizhen==============================*/
+body,
+html {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b1.cur),
+        auto !important;
+}
+
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*a标签*/
+a:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*按钮*/
+button:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*i标签*/
+i:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*页脚a标签*/
+#footer-wrap a:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*分页器*/
+#pagination .page-number:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+/*头部的导航栏*/
+#nav .site-page:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/bynotes.github.io@master/img/b2.cur),
+        auto !important;
+}
+
+
+/* 3.md图片样式 =======================================*/
+img[src*='#img-radius'] {
+  border-radius: 9px;
+}
+/* 给图片加圆角 */
+img{
+  border-radius: 9px;
+}
+
+
+
+/*6.页底宽度 */
+#footer {
+  width: 1170px;
+  margin: 0 auto;
+}
+/*6.首页卡片距离调整 */
+#recent-posts > .recent-post-item {
+  height: 11em;
+}
+/*6侧边模块距离调整*/
+#aside-content .card-widget {
+  margin-top: 1%;
+}
+/*首页卡片文字变多*/
+#recent-posts .recent-post-item > .recent-post-info > .content {
+  -webkit-line-clamp: 4;
+}
+
+/*首页卡片的距离*/
+#recent-posts .recent-post-item {
+  height: 14.8em;
+}
